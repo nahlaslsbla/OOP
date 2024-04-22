@@ -1,0 +1,11 @@
+public class CarRentalSystem {
+    public static void main(String[] args) {
+        Vehicle[] vehicles = new Vehicle[2];
+        vehicles[0] = new Car("Toyota", "Camry", 2021, 5);
+        vehicles[1] = new Truck("Ford", "F-150", 2020, 2.5);
+
+        for (Vehicle vehicle : vehicles) {
+            System.out.println(vehicle.getDescription());
+        }
+    }
+}
